@@ -1,11 +1,12 @@
 # Mern-230425
 
 Steps:
-1. Create conda virtual environment.
-2. Install Open Interpreter modeule in the system.
-3. Run the command interpreter --local.
-4. Connect codellama model with the interpreter bot.
-5. Give prompt to the code bot.
+1. Create conda virtual environment.`conda create -n tg python=3.10.9` `conda activate tg`
+2. Install codellama.`git clone https://github.com/facebookresearch/codellama.git`
+3. Install Open Interpreter modeule in the system.`pip install open-interpreter`
+4. Run the command interpreter --local.`interpreter --local`
+5. Connect codellama model with the interpreter bot.
+6. Give prompt to the code bot.
 
 Auto code completion and execution
 
