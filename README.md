@@ -5,13 +5,22 @@ Steps:
    ```
    conda create -n tg python=3.10.9
    ```
-   ```conda activate tg```
+2. Activate Virtual Environment
+   ```
+   conda activate tg
+   ```
 3. Install codellama.
-   ```git clone https://github.com/facebookresearch/codellama.git```
+   ```
+   git clone https://github.com/facebookresearch/codellama.git
+   ```
 4. Install Open Interpreter modeule in the system.
-   ```pip install open-interpreter```
+   ```
+   pip install open-interpreter
+   ```
 5. Run the command interpreter --local.
-   ```interpreter --local```
+   ```
+   interpreter --local
+   ```
 6. Connect codellama model with the interpreter bot.
 7. Give prompt to the code bot.
 
