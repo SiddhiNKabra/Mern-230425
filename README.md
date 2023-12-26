@@ -3,11 +3,11 @@
 Steps:
 1. Create conda virtual environment.
    ```
-   conda create -n tg python=3.10.9
+   conda create -n oi python=3.10.9
    ```
 2. Activate Virtual Environment
    ```
-   conda activate tg
+   conda activate oi
    ```
 3. Install codellama.
    ```
