@@ -1,44 +1,70 @@
-# Mern-230425
+# Getting Started with Create React App
 
-Steps:
-1. Create conda virtual environment.
-   ```
-   conda create -n oi python=3.10.9
-   ```
-2. Activate Virtual Environment
-   ```
-   conda activate oi
-   ```
-3. Install codellama.
-   ```
-   git clone https://github.com/facebookresearch/codellama.git
-   ```
-4. Install Open Interpreter modeule in the system.
-   ```
-   pip install open-interpreter
-   ```
-5. Run the command interpreter --local.
-   ```
-   interpreter --local
-   ```
-6. Connect codellama model with the interpreter bot.
-7. Give prompt to the code bot.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Auto code completion and execution
+## Available Scripts
 
-![image](https://github.com/SiddhiNKabra/Mern-230425/assets/71878431/59e0ca84-f78a-4c42-9047-e7773df5e639)
+In the project directory, you can run:
 
+### `npm start`
 
-React code completion and test case generation
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-![image](https://github.com/SiddhiNKabra/Mern-230425/assets/71878431/2a48fa02-d04c-4171-95cf-b20f2fc6efdc)
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
+### `npm test`
 
-Node.js RESTFUL API generation for post request
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-![image](https://github.com/SiddhiNKabra/Mern-230425/assets/71878431/7dc2e017-2b9e-4c6e-885f-df6c69b1356d)
+### `npm run build`
 
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-Mongo DB setup with express.js
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-![image](https://github.com/SiddhiNKabra/Mern-230425/assets/71878431/c93d1050-d76c-4865-ab89-817e8d965eb2)
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
