@@ -1,60 +1,28 @@
-import React, { useState } from 'react';
-import './App.css'; 
+import React, { useEffect, useState } from 'react'
 
-const App = () => {
-  const [input, setInput] = useState('');
-  const [output, setOutput] = useState('');
+function App() {
+  const [data, setData] = useState({ members: [] })
 
-  const queryAPI = async () => {
-    try {
-      const response = await fetch('https://api-inference.huggingface.co/models/codellama/CodeLlama-13b-hf', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          Authorization: 'Bearer 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',
-        },
-        body: JSON.stringify({ 
-          inputs: input,
-          // options: {
-          //   max_length: 1024, // Set the desired max length (adjust as needed)
-          // },
-         }),
-      });
-
-      const result = await response.json();
-
-      // Log the entire result object for better error analysis
-      console.log('API Response:', result);
-
-      setOutput(result[0]?.generated_text || 'No generated text available');
-    } catch (error) {
-      console.error('Error querying the API:', error);
-    }
-  };
+  useEffect(() => { 
+    fetch("/members")
+      .then(res => res.json())
+      .then(data => {
+        setData(data)
+        console.log(data)
+      })
+  }, [])
 
   return (
-    <div className="app-container">
-      <h1>Code Generator App</h1>
-
-      <div className="input-container">
-        <label>
-          Enter your input:
-          <textarea
-            rows="4"
-            value={input}
-            onChange={(e) => setInput(e.target.value)}
-            placeholder="Enter your code or text here"
-          />
-        </label>
-        <button onClick={queryAPI}>Generate Code</button>
-      </div>
-
-      <div className="output-container">
-        <h2>Generated Code:</h2>
-        <pre>{output}</pre>
-      </div>
+    <div>
+      {data.members === undefined ? (
+        <p>Loading....</p>
+      ) : (
+        data.members.map((member, i) => (
+          <p key={i}>{member}</p>
+        ))
+      )}
     </div>
-  );
-};
+  )
+}
 
-export default App;
+export default App
